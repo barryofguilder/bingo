@@ -19,6 +19,27 @@ You will need the following things properly installed on your computer.
 * `cd bingo`
 * `yarn install`
 
+### Prettier Setup
+
+This project uses the [Prettier](https://prettier.io/) code formatter, so you'll want the plugin 
+for your editor installed
+
+* [Editor Integration](https://prettier.io/docs/en/editors.html)
+
+If you want the files to format on save in VSCode, add the following to your workspace 
+`settings.json` file:
+
+```
+{
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  }
+}
+```
+
 ## Running / Development
 
 * `ember serve`
