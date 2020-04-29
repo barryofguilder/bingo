@@ -19,8 +19,10 @@
   },
   "devDependencies": {
     "@ember/optional-features": "^1.3.0",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
     "@glimmer/component": "^1.0.0",
     "@glimmer/tracking": "^1.0.0",
+    "autoprefixer": "^9.7.6",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.5.3",
@@ -31,6 +33,7 @@
     "ember-cli-eslint": "^5.1.0",
     "ember-cli-htmlbars": "^4.2.2",
     "ember-cli-inject-live-reload": "^2.0.2",
+    "ember-cli-postcss": "^6.0.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-template-lint": "^1.0.0-beta.3",
     "ember-cli-uglify": "^3.0.0",
@@ -48,8 +51,10 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.3",
     "loader.js": "^4.7.0",
+    "postcss-import": "^12.0.1",
     "prettier": "2.0.5",
-    "qunit-dom": "^1.0.0"
+    "qunit-dom": "^1.0.0",
+    "tailwindcss": "^1.4.0"
   },
   "engines": {
     "node": "10.* || >= 12"
