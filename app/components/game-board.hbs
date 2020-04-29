@@ -1,0 +1,42 @@
+
+<div>
+  <button
+    type="button"
+    class="px-4 py-1 bg-teal-600 text-teal-100 rounded shadow hover:bg-teal-700 focus:outline-none focus:shadow-outline"
+    {{on "click" this.nextSelection}}
+  >
+    Next &gt;
+  </button>
+</div>
+
+{{#if this.isPlaying}}
+  {{#if this.currentSelection}}
+    <div class="mt-8 flex">
+      <div class="p-8 text-5xl font-semibold text-teal-900 bg-teal-200 rounded">
+        {{this.currentSelection}}
+      </div>
+    </div>
+  {{/if}}
+{{/if}}
+
+{{#if this.isFinished}}
+  <div class="mt-8 text-2xl">There are no more selections left.</div>
+{{/if}}
+
+<div class="mt-8">
+  <button
+    type="button"
+    class="underline text-teal-800"
+    {{on "click" this.toggleSelections}}
+  >
+    Show Selections
+  </button>
+
+  {{#if this.showSelections}}
+    <ul>
+      {{#each this.selections as |selection|}}
+        <li>{{selection}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>
